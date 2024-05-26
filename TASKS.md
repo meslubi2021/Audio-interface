@@ -36,7 +36,7 @@
     - [ ] Sends to describe API
     - [ ] prints and returns description
   - [ ] Llamafile for phi-2 + moondream
-    - [ ] test on rPi + Jetson (+android mini phone?) 
+    - [ ] test on rPi + Jetson (+android mini phone?)
 
 **OS**
 
@@ -55,7 +55,7 @@
 - [ ] Can tapping the mic twice = trigger pressing the "button"? Simple sensing, just based on volume spikes?
 - [ ] Update Architecture
   - [ ] Base Devise Class
-  - [ ] Seperate folders for Rasberry Pi, Desktop, Droid, App, Web
+  - [ ] Separate folders for Rasberry Pi, Desktop, Droid, App, Web
   - [ ] device.py for each folder has input logic for that device
     - [ ] Add basic TUI to device.py. Just renders messages and lets you add messages. Can easily copy OI's TUI.
   - [ ] index.html for each folder has user interface for that device
@@ -66,7 +66,7 @@
 
 **Hardware**
 
-- [ ] (Hardware and software) Get the 01OS working on the **Jetson** or Pi. Pick one to move forward with. 
+- [ ] (Hardware and software) Get the 01OS working on the **Jetson** or Pi. Pick one to move forward with.
 - [ ] Connect the Seeed Sense (ESP32 with Wifi, Bluetooth and a mic) to a small DAC + amplifier + speaker.
 - [ ] Connect the Seeed Sense to a battery.
 - [ ] Configure the ESP32 to be a wireless mic + speaker for the Jetson or Pi.

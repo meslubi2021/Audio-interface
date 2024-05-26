@@ -8,6 +8,13 @@
     <br><a href="https://openinterpreter.com/01">Preorder the Light</a>‎ ‎ |‎ ‎ <a href="https://changes.openinterpreter.com">Get Updates</a>‎ ‎ |‎ ‎ <a href="https://01.openinterpreter.com/">Documentation</a><br>
 </p>
 
+<div align="center">
+
+ | [日本語](docs/README_JP.md) | [English](README.md) |
+
+</div>
+
+
 <br>
 
 ![OI-O1-BannerDemo-2](https://www.openinterpreter.com/OI-O1-BannerDemo-3.jpg)
@@ -16,11 +23,10 @@ We want to help you build. [Apply for 1-on-1 support.](https://0ggfznkwh4j.typef
 
 <br>
 
----
-
-⚠️ **WARNING:** This experimental project is under rapid development and lacks basic safeguards. Until a stable `1.0` release, **ONLY** run this repository on devices without sensitive information or access to paid services. ⚠️
-
----
+> [!IMPORTANT]
+> This experimental project is under rapid development and lacks basic safeguards. Until a stable `1.0` release, only run this repository on devices without sensitive information or access to paid services.
+>
+> **A substantial rewrite to address these concerns and more, including the addition of [RealtimeTTS](https://github.com/KoljaB/RealtimeTTS) and [RealtimeSTT](https://github.com/KoljaB/RealtimeSTT), is occurring [here](https://github.com/KillianLucas/01-rewrite/tree/main).**
 
 <br>
 
@@ -48,12 +54,17 @@ export OPENAI_API_KEY=sk... # OR run `poetry run 01 --local` to run everything l
 poetry run 01 # Runs the 01 Light simulator (hold your spacebar, speak, release)
 ```
 
+<!-- > For a Windows installation, read our [setup guide](https://docs.openinterpreter.com/getting-started/setup#windows). -->
+
 <br>
+
+**The [RealtimeTTS](https://github.com/KoljaB/RealtimeTTS) and [RealtimeSTT](https://github.com/KoljaB/RealtimeSTT) libraries in the incoming 01-rewrite are thanks to the state-of-the-art voice interface work of [Kolja Beigel](https://github.com/KoljaB). Please star those repos and consider contributing to / utilizing those projects!**
 
 # Hardware
 
-- The **01 Light** is an ESP32-based voice interface. [Build instructions are here.](https://github.com/OpenInterpreter/01/tree/main/hardware/light) It works in tandem with the **01 Server** ([setup guide below](https://github.com/OpenInterpreter/01/blob/main/README.md#01-server)) running on your home computer.
-- **Mac OSX** and **Ubuntu** are supported by running `poetry run 01`. This uses your spacebar to simulate the 01 Light.
+- The **01 Light** is an ESP32-based voice interface. Build instructions are [here](https://github.com/OpenInterpreter/01/tree/main/hardware/light). A list of what to buy [here](https://github.com/OpenInterpreter/01/blob/main/hardware/light/BOM.md).
+- It works in tandem with the **01 Server** ([setup guide below](https://github.com/OpenInterpreter/01/blob/main/README.md#01-server)) running on your home computer.
+- **Mac OSX** and **Ubuntu** are supported by running `poetry run 01` (**Windows** is supported experimentally). This uses your spacebar to simulate the 01 Light.
 - (coming soon) The **01 Heavy** is a standalone device that runs everything locally.
 
 **We need your help supporting & building more hardware.** The 01 should be able to run on any device with input (microphone, keyboard, etc.), output (speakers, screens, motors, etc.), and an internet connection (or sufficient compute to run everything locally). [Contribution Guide →](https://github.com/OpenInterpreter/01/blob/main/CONTRIBUTING.md)
